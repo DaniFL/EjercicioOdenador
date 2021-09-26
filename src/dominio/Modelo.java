@@ -2,56 +2,62 @@ package src.dominio;
 
 public class Modelo {
 
-private String marca = "";
-private String modeloProcesador = "";
-private String identificadorModelo;
-private String memoriaRam;
-private String discoDuro;
-private Oferta tieneOrdenadorOfertado;
+    //Atributos
 
-public void setMarca(String marca) {
+    private int numeroModelo;
+    private String marca;
+    private String modeloProcesador;
+    private String identificadorModelo;
+    private String memoriaRam;
+    private String discoDuro;
+
+    //Encapsulación (métodos get&set de los atributos de la clase)
+
+    public int getNumeroModelo() {
+        return numeroModelo;
+    }
+
+    public void setNumeroModelo(int numeroModelo) {
+        this.numeroModelo = numeroModelo;
+    }
+
+    public void setMarca(String marca) {
     this.marca = marca;
-}
-public String getMarca() {
-    return marca;
-}
+    }
+    public String getMarca() {
+        return marca;
+    }
 
-public void setMemoriaRam(String memoriaRam) {
-    this.memoriaRam = memoriaRam;
-}
-public String getMemoriaRam() {
-    return memoriaRam;
-}
+    public void setMemoriaRam(String memoriaRam) {
+        this.memoriaRam = memoriaRam;
+    }
+    public String getMemoriaRam() {
+        return memoriaRam;
+    }
 
-public void setDiscoDuro(String discoDuro) {
-    this.discoDuro = discoDuro;
-}
-public String getDiscoDuro() {
-    return discoDuro;
-}
+    public void setDiscoDuro(String discoDuro) {
+        this.discoDuro = discoDuro;
+    }
+    public String getDiscoDuro() {
+        return discoDuro;
+    }
 
-public void setIdentificadorModelo(String identificadorModelo) {
-    this.identificadorModelo = identificadorModelo;
-}
-public String getIdentificadorModelo() {
-    return identificadorModelo;
-}
+    public void setIdentificadorModelo(String identificadorModelo) {
+        this.identificadorModelo = identificadorModelo;
+    }
+    public String getIdentificadorModelo() {
+        return identificadorModelo;
+    }
 
-public void setModeloProcesador(String modeloProcesador) {
-    this.modeloProcesador = modeloProcesador;
-}
-public String getModeloProcesador() {
-    return modeloProcesador;
-}
+    public void setModeloProcesador(String modeloProcesador) {
+        this.modeloProcesador = modeloProcesador;
+    }
+    public String getModeloProcesador() {
+        return modeloProcesador;
+    }
 
-public void setTieneOrdenadorOfertado(Oferta tieneOrdenadorOfertado){
-    this.tieneOrdenadorOfertado = tieneOrdenadorOfertado;
-}
-public Oferta getTieneOrdenadorOfertado() {
-    return tieneOrdenadorOfertado;
-}
-public String toString(){
-    String datos = 
-    return datos;
-}
+    public String toString(){
+        return "Modelo " + numeroModelo + ":" +  "\n- Marca:" + marca + "\n- Identificador: " + identificadorModelo + "\n- Memoria ram:" +
+                memoriaRam + "\n- Modelo procesador:" + modeloProcesador + "\n- Disco duro:" + discoDuro;
+    }
 }
