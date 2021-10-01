@@ -25,6 +25,14 @@ public class Principal{
         modelo2.setDiscoDuro(" 1 TB ");
         modelo2.setMemoriaRam(" 16 GB ");
 
+        Modelo modelo3 = new Modelo();
+        modelo3.setNumeroModelo(3);
+        modelo3.setMarca(" MSI ");
+        modelo3.setIdentificadorModelo("GL76");
+        modelo3.setModeloProcesador(" Intel i7 ");
+        modelo3.setDiscoDuro(" 1 TB ");
+        modelo3.setMemoriaRam(" 16 GB ");
+
         //Nueva oferta:
 
         Oferta oferta1 = new Oferta();
@@ -35,6 +43,10 @@ public class Principal{
         Oferta oferta2 = new Oferta();
         oferta2.setPrecioInicial(900);
         oferta2.setDescuento(150);
+
+        Oferta oferta3 = new Oferta();
+        oferta3.setPrecioInicial(1500);
+        oferta3.setDescuento(230);
 
         /*Relación entre Oferta y Modelo:
         oferta1.setTieneOrdenadorOfertado(modelo1);
@@ -50,8 +62,11 @@ public class Principal{
             } else if (ordenador == 2){
             oferta2.setTieneOrdenadorOfertado(modelo2);
             System.out.println(oferta2);
+            } else if (ordenador == 3){
+                oferta3.setTieneOrdenadorOfertado(modelo3);
+                System.out.println(oferta3);
             } else{
-            System.out.println("No existe el modelo que busca");
+                System.out.println("No existe el modelo seleccionado");
             }
     }
 }
