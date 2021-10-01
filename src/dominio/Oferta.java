@@ -41,8 +41,7 @@ public class Oferta {
     }
 
     public String toString() {
-        return "\n" + tieneOrdenadorOfertado + "\n" + "\nOferta ordenador: " + "\n- Precio Inicial: " + precioInicial + "€"
+        return  "\n" + "El siguiente ordenador está en oferta:" + "\n" + tieneOrdenadorOfertado + "\n" + "\nOferta ordenador: " + "\n- Precio Inicial: " + precioInicial + "€"
                 + "\n- Descuento: " + descuento + "€" + "\n- Precio Final: " + calcularPrecioFinal() + "€";
     }
-
 }

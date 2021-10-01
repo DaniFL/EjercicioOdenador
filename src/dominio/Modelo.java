@@ -57,7 +57,7 @@ public class Modelo {
     }
 
     public String toString(){
-        return "Modelo " + numeroModelo + ":" +  "\n- Marca:" + marca + "\n- Identificador: " + identificadorModelo + "\n- Memoria ram:" +
+        return "\n" + "Modelo " + numeroModelo + ":" +  "\n- Marca:" + marca + "\n- Identificador: " + identificadorModelo + "\n- Memoria ram:" +
                 memoriaRam + "\n- Modelo procesador:" + modeloProcesador + "\n- Disco duro:" + discoDuro;
     }
 }
